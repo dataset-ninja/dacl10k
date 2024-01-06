@@ -50,25 +50,25 @@ DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = {
-    "": [230, 25, 75],
-    "": [60, 180, 75],
-    "": [255, 225, 25],
-    "": [0, 130, 200],
-    "": [245, 130, 48],
-    "": [145, 30, 180],
-    "": [70, 240, 240],
-    "": [240, 50, 230],
-    "": [210, 245, 60],
-    "": [250, 190, 212],
-    "": [0, 128, 128],
-    "": [220, 190, 255],
-    "": [170, 110, 40],
-    "": [255, 250, 200],
-    "": [128, 0, 0],
-    "": [170, 255, 195],
-    "": [128, 128, 0],
-    "": [255, 215, 180],
-    "": [0, 0, 128],
+    "crack": [255, 192, 203],
+    "alligator crack": [178, 223, 138],
+    "efflorescence": [0, 0, 255],
+    "rockpocket": [253, 191, 111],
+    "washouts/concrete corrosion": [0, 0, 139],
+    "hollowareas": [246, 124, 104],
+    "spalling": [123, 211, 247],
+    "restformwork": [212, 175, 162],
+    "wetspot": [0, 139, 139],
+    "rust": [255, 0, 0],
+    "graffiti": [255, 140, 0],
+    "weathering": [0, 128, 0],
+    "exposed rebars": [207, 52, 118],
+    "bearing": [139, 69, 19],
+    "expansion joint": [169, 169, 169],
+    "drainage": [139, 0, 0],
+    "protective equipment": [128, 128, 0],
+    "joint tape": [128, 0, 128],
+    "cavity": [0, 255, 128],
 }
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
@@ -76,7 +76,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = {
     "Research Paper": "https://arxiv.org/abs/2309.00460",
-    "Dacl challenge data": "https://eval.ai/web/challenges/challenge-page/2130/overview",
+    "Dacl Challenge Data": "https://eval.ai/web/challenges/challenge-page/2130/overview",
 }
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
@@ -89,7 +89,9 @@ AUTHORS_CONTACTS: Optional[List[str]] = [
     "thomas.braml@unibw.de",
 ]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["University of the Bundeswehr Munich"]
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "University of the Bundeswehr Munich, Germany"
+]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.unibw.de/home-en"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}

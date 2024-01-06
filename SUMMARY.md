@@ -4,4 +4,6 @@ The dataset consists of 9920 images with 62327 labeled objects belonging to 19 d
 
 Images in the dacl10k dataset have pixel-level semantic segmentation annotations. There are 2081 (21% of the total) unlabeled images (i.e. without annotations). There are 3 splits in the dataset: *train* (6935 images), *test* (2010 images), and *val* (975 images). The dataset was released in 2023 by the University of the Bundeswehr Munich.
 
-<img src="https://github.com/dataset-ninja/dacl10k/raw/main/visualizations/poster.png">
+Here are the visualized examples for the classes:
+
+[Dataset classes](https://github.com/dataset-ninja/dacl10k/raw/main/visualizations/classes_preview.webm)
