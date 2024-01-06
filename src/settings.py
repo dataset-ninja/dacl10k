@@ -95,7 +95,9 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.unibw.de/home-en"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "__PRETEXT__": "Every object class can be labeled with ***damage class*** tag: ***weathering***, ***rust***,***cavity***,***efflorescence***,***alligator crack***,***spalling***,***graffiti***,***restformwork***,***wetspot***,***exposed rebars***, ***hollowareas***, ***crack***, ***rockpocket*** classes, or ***object class*** tag: ***bearing***, ***expansion joint***, ***drainage***, ***protective equipment***, ***joint tape***, ***washouts/concrete corrosion*** classes. Every image in test dataset has one of following tags: ***test dev*** or ***test challenge***"
+}
 TAGS: Optional[List[str]] = None
 
 
