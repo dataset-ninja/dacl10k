@@ -20,7 +20,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.CC_BY_NC_4_0()
+LICENSE: License = License.CC_BY_NC_4_0(source_url="https://github.com/phiyodr/dacl10k-toolkit")
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Construction()]
 CATEGORY: Category = Category.Construction()
 
