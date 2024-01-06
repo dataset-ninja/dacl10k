@@ -34,7 +34,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://dacl.ai/workshop.html"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 11909145
+PREVIEW_IMAGE_ID: int = 12455283
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/dacl10k"
@@ -96,7 +96,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.unibw.de/home-
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Every object class can be labeled with ***damage class*** tag: ***weathering***, ***rust***,***cavity***,***efflorescence***,***alligator crack***,***spalling***,***graffiti***,***restformwork***,***wetspot***,***exposed rebars***, ***hollowareas***, ***crack***, ***rockpocket*** classes, or ***object class*** tag: ***bearing***, ***expansion joint***, ***drainage***, ***protective equipment***, ***joint tape***, ***washouts/concrete corrosion*** classes. Every image in test dataset has one of following tags: ***test dev*** or ***test challenge***"
+    "__PRETEXT__": "Additionally, each label in images has ***concrete defect***, ***general defect***, or ***object part*** tag. Also every image in test dataset has one of following tags: ***test dev*** or ***test challenge***"
 }
 TAGS: Optional[List[str]] = None
 

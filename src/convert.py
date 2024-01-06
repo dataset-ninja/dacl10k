@@ -117,8 +117,10 @@ def convert_and_upload_supervisely_project(
             class_name = curr_ann_label["label"]
             if class_name in object_classes:
                 class_type = sly.Tag(object_meta)
+            elif class_name in general_classes:
+                class_type = sly.Tag(general_meta)
             else:
-                class_type = sly.Tag(damage_meta)
+                class_type = sly.Tag(concrete_meta)
             obj_class = names_to_obj_classes[class_name]
             coords = curr_ann_label["points"]
             exterior = [[coord[1], coord[0]] for coord in coords]
@@ -133,8 +135,9 @@ def convert_and_upload_supervisely_project(
     testdev_meta = sly.TagMeta("test dev", sly.TagValueType.NONE)
     testchallenge_meta = sly.TagMeta("test challenge", sly.TagValueType.NONE)
     subfolder_value_to_tag = {"testdev": testdev_meta, "testchallenge": testchallenge_meta}
-    damage_meta = sly.TagMeta("damage class", sly.TagValueType.NONE)
-    object_meta = sly.TagMeta("object class", sly.TagValueType.NONE)
+    general_meta = sly.TagMeta("general defect", sly.TagValueType.NONE)
+    concrete_meta = sly.TagMeta("concrete defect", sly.TagValueType.NONE)
+    object_meta = sly.TagMeta("object part", sly.TagValueType.NONE)
 
     names_to_obj_classes = {
         "Weathering": sly.ObjClass("weathering", sly.Polygon),
@@ -159,9 +162,10 @@ def convert_and_upload_supervisely_project(
     }
 
     object_classes = ["Bearing", "EJoint", "Drainage", "PEquipment", "JTape", "WConccor"]
+    general_classes = ["Rust", "Weathering", "Wetspot", "Graffiti"]
 
     meta = sly.ProjectMeta(
-        tag_metas=[testdev_meta, testchallenge_meta, damage_meta, object_meta],
+        tag_metas=[testdev_meta, testchallenge_meta, general_meta, concrete_meta, object_meta],
         obj_classes=list(names_to_obj_classes.values()),
     )
 
