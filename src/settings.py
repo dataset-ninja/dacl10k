@@ -20,7 +20,9 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.CC_BY_NC_4_0(source_url="https://github.com/phiyodr/dacl10k-toolkit")
+LICENSE: License = License.CC_BY_NC_4_0(
+    source_url="https://github.com/phiyodr/dacl10k-toolkit?tab=readme-ov-file#arrow_right-data"
+)
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Construction()]
 CATEGORY: Category = Category.Construction()
 
@@ -96,7 +98,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.unibw.de/home-
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, each label in images has ***concrete defect***, ***general defect***, or ***object part*** tag. Also every image in test dataset has one of following tags: ***test dev*** or ***test challenge***"
+    "__PRETEXT__": "Additionally, each label in images has ***concrete defect***, ***general defect***, or ***object part*** tag. Also every image in ***test*** dataset has one of following tags: ***test dev*** or ***test challenge***. Explore it in supervisely labeling tool"
 }
 TAGS: Optional[List[str]] = None
 
