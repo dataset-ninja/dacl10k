@@ -1,6 +1,6 @@
 Dataset **dacl10k** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/i/5/dl/8nxteeciB0zFqTru14ifINizj80UsS7hH06wQyiiYpQvrGqymoKfhf65a93llGdkStrAefEfI72JziSEP5bgb8LfrRjuYG298XoGEZ1dojpGpSP7r5pNUbdULLSe.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
