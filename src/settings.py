@@ -10,12 +10,12 @@ from dataset_tools.templates import (
     Research,
 )
 
-##################################
+##################################s
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "dacl10k"
 PROJECT_NAME_FULL: str = "dacl10k: Benchmark for Semantic Bridge Damage Segmentation"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
